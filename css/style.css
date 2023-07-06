@@ -675,8 +675,79 @@ footer .logo-blk {
 .product-page .product-wrapper {
     margin: 0 -25px;
 }
+/* Product Detail */
+.detail-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -20px;
+}
+.detail-wrapper .left-col{
+    flex: 0 0  40%;
+    max-width: 40%;
+    padding: 0 20px;
+}
+.detail-wrapper .right-col{
+    flex: 0 0  60%;
+    max-width: 60%;
+    padding: 0 20px;
+}
+.detail-wrapper h2{
+    font-size: 30px;
+    color: #000000;
+    line-height: 1.3;
+    padding-bottom: 15px;
+    font-weight: 500;
+}
+.detail-wrapper p{
+    font-size: 18px;
+    color: #000000;
+    line-height: 1.3;
+    padding: 15px 0;
+}
+.price-wrapper{
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+}
+.price-wrapper span{
+    display: block;
+    text-align: left;
+    font-size: 16px;
+}
+.price-wrapper div{
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+}
+.price-wrapper > span{
+    font-weight: 600;
+    padding-right: 15px;
+    color: #000000;
+}
 
-
+.detail-wrapper .old-price{
+    font-size: 14px;
+}
+.detail-wrapper .current-price{
+    font-size: 24px;
+    padding-right: 10px;
+}
+.owl-nav{
+    display: none;
+}
+.owl-dots{
+    padding-top: 10px;
+}
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    background: #0A84FF;
+}
+#product-slider .item{
+    max-height: 350px;
+}
+.detail-wrapper .btn{
+    margin-top: 10px;
+}
 /* ============================================= */
 /* ================== Media css ================ */
 /* ============================================= */
@@ -791,6 +862,26 @@ footer .logo-blk {
     .social ul li {
         padding: 0 15px;
     }
+
+    .detail-wrapper h2 {
+        font-size: 24px;
+        padding-bottom: 10px;
+    }
+    .owl-theme .owl-dots .owl-dot span {
+        width: 8px;
+        height: 8px;      
+    }
+    .detail-wrapper .left-col {
+        flex: 0 0 100%;
+        max-width: 100%;     
+        height: 100%;
+    }
+    .detail-wrapper .right-col {
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding: 0 20px;
+    }
+    
 }
 @media only screen and (max-width: 768px) {
     .navbar-link ul a {
@@ -850,6 +941,22 @@ footer .logo-blk {
     .team-wrapper::before,
     .gallary-section:before{
         display: none;
+    }
+    .detail-wrapper .left-col {
+        flex: 0 0 100%;
+        max-width: 100%;     
+        height: 100%;
+        padding-bottom: 20px;
+    }
+    .detail-wrapper .right-col {
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding: 0 20px;
+    }
+    .inner-page .banner-content {
+        margin: 0 auto;
+        text-align: center;
+        padding: 75px 0;
     }
 }
 @media only screen and (max-width: 480px) {
